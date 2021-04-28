@@ -1,0 +1,59 @@
+body {
+  font-family: 'Indie Flower', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size:4em ;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    text-transform: none;
+    font-size: 2em;
+    letter-spacing: 0.01em;
+
+}
+
+button{
+  display:inline-block;
+  padding:0.5em 3em;
+  font-size: 1em;
+  border:0.16em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family: 'Indie Flower', cursive;
+  font-weight:400;
+  color:black;
+  text-align:center;
+  transition: all 0.15s;
+  }
+
+  button:hover{
+  color:grey;
+  border-color:#DDDDDD;
+  }
+
+  button:active{
+  color:#BBBBBB;
+  border-color:#BBBBBB;
+  }
+  
+  @media all and (max-width:30em){
+   button{
+  display:block;
+  margin:0.4em auto;
+  }
+  }
