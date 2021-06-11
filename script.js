@@ -2,6 +2,7 @@ const body = document.getElementById('body')
 const color1 = document.getElementById('color1')
 const color2 = document.getElementById('color2')
 const random = document.getElementsByTagName('button')[0]
+const info = document.getElementById('text')
 
 
 color1.addEventListener('input', () => {
@@ -28,7 +29,17 @@ function getRandomColor() {
   return color;
 }
 
+function setInfo(color1,color2){
+  const text = document.createTextNode(`background-color: linear-gradient(to right, ${color1}, ${color2})`)
+
+  info.appendChild(text);
+}
+function cleanInfo(){
+  info.innerHTML = '';
+
+}
 random.addEventListener('click', () => {
+  cleanInfo()
   color1.value = getRandomColor()
   color2.value = getRandomColor()
   body.style.background =
@@ -37,4 +48,5 @@ random.addEventListener('click', () => {
     + ", "
     + color2.value
     + ")";
+  setInfo(color1.value,color2.value)
 })
